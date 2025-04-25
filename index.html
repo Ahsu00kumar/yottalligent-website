@@ -288,13 +288,22 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const menuItems = document.querySelectorAll(".navbar-nav .nav-link");
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarCollapse = document.getElementById(
+          "navbarSupportedContent"
+        );
 
-        menuItems.forEach((item) => {
-          item.addEventListener("click", function () {
-            menuItems.forEach((link) => link.classList.remove("active"));
-
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            // Remove 'active' from all links and add to the clicked one
+            navLinks.forEach((nav) => nav.classList.remove("active"));
             this.classList.add("active");
+
+            // Collapse the navbar on mobile
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+              bsCollapse.hide();
+            }
           });
         });
       });
