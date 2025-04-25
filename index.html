@@ -30,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./"
+                <a class="nav-link active" aria-current="page" href="#home"
                   >Home</a
                 >
               </li>
@@ -50,7 +50,7 @@
         </div>
       </nav>
     </header>
-    <div class="container">
+    <div class="container" id="home">
       <div class="row mx-0 d-flex align-items-center justify-content-center">
         <div class="col-lg-4 col-md-5">
           <div class="main_content"><h1>RESULTS GROWTH DELIVERED</h1></div>
@@ -286,5 +286,18 @@
     </footer>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuItems = document.querySelectorAll(".navbar-nav .nav-link");
+
+        menuItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            menuItems.forEach((link) => link.classList.remove("active"));
+
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

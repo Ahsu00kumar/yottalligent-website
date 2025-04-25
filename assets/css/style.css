@@ -13,11 +13,12 @@ body {
 }
 
 /* for header css */
-/* header {
+header {
     position: sticky;
     top: 0;
-    z-index: 1;
-} */
+    z-index: 5;
+    background-color: #fff;
+}
 
 .navbar .for_m_header {
     width: 100%;
