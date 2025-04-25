@@ -92,6 +92,7 @@ body {
 }
 
 .services ul {
+    padding-left: 0px;
     margin-top: 3rem;
     list-style: none;
 }
@@ -150,4 +151,289 @@ body {
 
 .colss-4 {
     width: 20% !important;
+}
+
+.client {
+    text-align: center;
+}
+
+.client h2 {
+    text-align: center;
+    font-size: 70px;
+    color: var(--primary-color);
+    padding: 2rem 0rem;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 0rem;
+    font-weight: 600;
+    letter-spacing: 5rem;
+}
+
+.all_client {
+    width: 80%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.all_client ul {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_client ul li a img {
+    width: 170px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.client {
+    margin-bottom: 6rem;
+}
+
+.contact_form {
+    background-color: var(--primary-color);
+    padding: 40px;
+
+}
+
+.contact_form input[type="text"] {
+    border-radius: 2rem;
+
+}
+
+.contact_form input[type="email"] {
+    border-radius: 2rem;
+
+}
+
+.contact_form form {
+    text-align: center;
+}
+
+.contact_form input[type="submit"] {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-radius: 1rem;
+    border: none;
+    margin: 0px auto;
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+
+.contact_details {
+    text-align: center;
+}
+
+.footer_logo {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.contact_info {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.contact_info label {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.contact_info label+a {
+    color: #222;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width:992px) {
+    .main_content h1 {
+        font-size: 72px;
+    }
+
+    .for_about {
+        margin-top: 1rem;
+
+    }
+
+    .for_about h2 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .for_about p {
+        line-height: 2.1rem;
+    }
+
+    .subheading h2:first-child {
+        font-size: 48px;
+    }
+
+    .subheading h3 {
+        padding: 0px;
+        font-size: 42px;
+    }
+
+    .testimonials {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .testimonials p {
+        font-size: 24px;
+    }
+
+    .services ul li {
+        font-size: 38px;
+    }
+
+    .work h2 {
+        font-size: 102px;
+        font-weight: 500;
+    }
+
+    .colss-1 {
+        width: 42% !important;
+        margin-bottom: 1rem;
+    }
+
+    .colss-2 {
+        width: 58% !important;
+        margin-bottom: 1rem;
+    }
+
+    .colss-4 {
+        width: 42% !important;
+        margin-bottom: 1rem;
+    }
+
+    .colss-3 {
+        width: 58% !important;
+        margin-bottom: 1rem;
+    }
+
+    .client h2 {
+        font-size: 48px;
+        letter-spacing: 2rem;
+    }
+
+    .all_client ul {
+        flex-wrap: wrap;
+    }
+
+    .contact_form {
+        padding: 25px;
+    }
+
+    .contact_info {
+        font-size: 1.1rem;
+    }
+
+    .contact_info label+a {
+        text-align: justify;
+    }
+}
+
+@media (max-width:768px) {
+    .main_content h1 {
+        font-size: 48px;
+    }
+
+    .work h2 {
+        font-size: 52px;
+    }
+
+    .contact_details {
+        margin-top: 2rem;
+    }
+
+    .subheading h2:first-child {
+        font-size: 36px;
+    }
+
+    .subheading h3 {
+        font-size: 36px;
+    }
+
+    .work h2,
+    .client h2 {
+        font-size: 28px;
+        letter-spacing: 1rem;
+
+    }
+
+    .all_client ul li a img {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width:426px) {
+    .main_content h1 {
+        font-size: 34px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .subheading h2:first-child {
+        font-size: 32px;
+    }
+
+    .subheading h3 {
+        font-size: 24px;
+    }
+
+    .services ul li {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .work {
+        padding: 4rem 0px;
+    }
+
+    .all_client ul li a img {
+        width: 150px;
+    }
+}
+
+@media (max-width:375px) {
+    .main_content h1 {
+        font-size: 28px;
+    }
+
+    .for_about h2 {
+        font-size: 30px;
+    }
+
+    .for_about p {
+        font-size: 1.1rem;
+    }
+
+    .subheading h2:first-child {
+        font-size: 26px;
+    }
+
+    .subheading h3 {
+        font-size: 24px;
+    }
+    .testimonials p{
+        font-size: 18px;
+    }
+    .services ul li{
+        font-size: 22px;
+    }
+    .all_client ul li a img{
+        width: 110px;
+    }
 }
