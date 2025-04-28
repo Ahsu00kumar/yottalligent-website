@@ -221,16 +221,22 @@ ul.workss li {
     width: 80%;
     /* overflow: hidden; */
     margin: 0px auto;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .all_client ul {
-    border-top: 1px solid var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
+
     list-style: none;
     padding-left: 0px;
+
+}
+
+.all_client ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0px;
 }
 
 .all_client ul li a img {
